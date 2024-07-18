@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+}
+
+.btn-primary {
+    background-color: #007bff; /* Primary blue color */
+    border-color: #007bff; /* Border color */
+    color: white; /* Text color */
+    padding: 6px;
+}
+
+.main-page {
+    width: 100%;
+    height: 100vh;
+    background: 'white';
+    padding: 0;
+    display: flex;
+    flex-direction: column
+}
+
+.chat-history {
+    background: #353740;
+    height: 50vh;
+    overflow-y: auto;
+    flex: 1;
+}
+
+.chat-box {
+    width: 100%;
+    background: 'white';
+    min-height: 50px;
+}
+
+.input-box {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 10px;
+}
+
+.text-box {
+    min-height: 25px;
+    width: 100%;
+    align-items: center
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Here, "0.5" is the opacity value (between 0 and 1) */
+    z-index: 9999; /* Set a high z-index value to ensure the overlay appears on top of other elements */
+}
+
+.loading-gif {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    background-image: url("loading.gif");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.msg-div {
+    display: flex;
+    min-height: 60px;
+    padding: 12px;
+    text-align: left;
+}
+
+.question {
+    background-color: gray;
+    display: flex;
+    padding: 12px;
+    text-align: left;
+}
+
+.answer {
+    background-color: gray;
+    display: flex;
+    padding: 12px;
+    text-align: left;
+}
+
+.qustion-container {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+table {
+    width: 100%;
+    color: #212529;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+table th,
+table td {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+    word-break: break-all;
+}
+
+
+table thead tr th {
+    vertical-align: top;
+    border-bottom: 1px solid #dee2e6;
+    background-color: #3372b1;
+}
+
+table tbody tr:nth-of-type(odd) {
+    background-color: #b8daff
+}
+
+table tbody tr:hover {
+    background-color: #b8daff
+}
+
+table tbody tr:nth-of-type(even) {
+    background-color: white;
+}
