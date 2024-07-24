@@ -19,6 +19,10 @@
   - Shows error message if error occured while getting backend API.
   - Visualize query result in table format.
   - Scrolls down to the lates query.
+
+Here is running example of query "I need the email addresses of people working for companies that are attending finance and banking events."
+  ![alt text](image.png)
+
 ### 3. The API endpoints the UI uses
 #### /process(POST)
 - Request
